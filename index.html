@@ -1,14 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
 </head>
-<body>
-    <h1>Título de teste</h1>
-    <p>parágrafo teste</p>
-    <h2 class="bg-red-950">Mais testes</h2>
+<body class="">
+    <header class="border-b-2 border-gray-500 bg-gradient-to-tr from-blue-300 to-gray-200">
+        <div class="p-6 flex justify-between">
+            <h1 class="ml-7 text-3xl font-black text-blue-500">Kauan prado</h1>
+            <nav class="pr-6">
+                <ul class="font-black space-x-4 text-blue-800">
+                    <il><a href="#sobre">Sobre mim</a></il>
+                    <il><a href="">Habilidades</a></il>
+                    <il><a href="">Formação</a></il>
+                    <il><a href="">Projetos</a></il>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="bg-gradient-to-t from-gray-300 to-blue-300">
+        <section id="sobre">
+            <div class="text-center m-">
+                <img src="img/foto_principal.png" alt="Foto de João" class="w-32 h-32 rounded-full mx-auto mb-4 mt-">
+                <h2 class="text-lg font-serif mb-2">Sobre mim</h2>
+                <p class="text-gray-700">Sou um estudante comum do ifms de Nova Andradina...</p>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
