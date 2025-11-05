@@ -3,31 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meu portifolio para LAEC</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
 </head>
-<body class="">
-    <header class="border-b-2 border-gray-500 bg-gradient-to-tr from-blue-300 to-gray-200">
+<body>
+    <header class=" border-b-2 border-gray-500 bg-gradient-to-tr from-blue-300 to-gray-100">
         <div class="p-6 flex justify-between">
-            <h1 class="ml-7 text-3xl font-black text-blue-500">Kauan prado</h1>
-            <nav class="pr-6">
-                <ul class="font-black space-x-4 text-blue-800">
-                    <il><a href="#sobre">Sobre mim</a></il>
-                    <il><a href="">Habilidades</a></il>
-                    <il><a href="">Formação</a></il>
-                    <il><a href="">Projetos</a></il>
+            <h1 class=" pb-1 ml-7 text-5xl font-black text-blue-500">Kauan prado</h1>
+            <nav class="max-w-4xl pr-6">
+                <ul class="text-xl font-black flex lg:gap-4 md:gap2 text-blue-800 pt-3" >
+                    <il><a href="#sobre" class="hover:text-blue-500">Sobre mim</a></il>
+                    <il><a href="#habilidades" class="hover:text-blue-500">Habilidades</a></il>
+                    <il><a href="#formacao" class="hover:text-blue-500">Formação</a></il>
+                    <il><a href="#projetos" class="hover:text-blue-500">Projetos</a></il>
+                    <li><a href="#contato" class="hover:text-blue-500">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main class="bg-gradient-to-t from-gray-300 to-blue-300">
+    <main class="bg-gradient-to-b from-gray-300 to-gray-400">
+
         <section id="sobre">
-            <div class="text-center m-">
-                <img src="img/foto_principal.png" alt="Foto de João" class="w-32 h-32 rounded-full mx-auto mb-4 mt-">
-                <h2 class="text-lg font-serif mb-2">Sobre mim</h2>
-                <p class="text-gray-700">Sou um estudante comum do ifms de Nova Andradina...</p>
+            <div class="text-center">
+                <div class="pb-5 pt-8">
+                    <img src="img/foto_principal.png" alt="Minha foto" class="w-64 h-64 rounded-full mx-auto mb-4 border-2 border-white">
+                </div>
+                <h2 class="py-6 text-4xl font-serif mb-2">Sobre mim</h2>
+                <p class="rounded-r-xl mb-6 shadow border-l-4 border-blue-400 text-xl text-gray-800 max-w-3xl m-auto lg:py-5 md:py-3 bg-gray-300">Olá! eu me chama Kaun tenho 16 anos e sou um estudante comum do curso de técnico de informatica do IFMS de Nova Andradina.</p>
+            </div>
+        </section>
+
+        <section id="habilidades" class="py-12">
+            <h2 class="text-center py-6 text-4xl font-serif mb-2">Habilidades</h2>
+            <div class=" text-center grid grid-cols-2 lg:gap-4 md:gap-2  max-w-7xl m-auto ">
+                <span class="bg-gray-300 shadow rounded-md p-4 text-lg border-l-8 border-blue-400">Desenvolver em HTML e CSS</span>
+                <span class="bg-gray-300 shadow rounded-md p-4 text-lg border-l-8 border-blue-400">Programar em JavaScript</span>
+                <span class="bg-gray-300 shadow rounded-md p-4 text-lg border-l-8 border-blue-400">Abilidades em VScode</span>
+                <span class="bg-gray-300 shadow rounded-md p-4 text-lg border-l-8 border-blue-400">Colecionador de informações inuteis</span>
+            </div>
+        </section>
+
+        <section id="formacao" class="py-12">
+             <h2 class="text-center py-6 text-4xl font-serif mb-2">Formação</h2>
+             <div class="text-center bg-gray-300 max-w-3xl m-auto text-xl p-6 shadow">
+                <p class="font-black text-2xl pb-2">Ainda em formação</p>
+                <p >No momento estou cursando técnico em informática no IFMS</p>
+             </div>
+        </section>
+        <section id="projetos" class="py-12">
+            <h2 class="text-center py-6 text-4xl font-serif mb-2">Meus projetos</h2>
+            <div class="flex ">
+                <div class="bg-gray-300 rounded-b-3xl shadow max-w-4xl m-auto border-4 border-black">
+                    <img src="img/calculadora_projeto.jpeg" alt="Calculadora de bhaskara" class="w-full h48">
+                    <h3 class="text-2xl font-mono mb-1 pt-3 pl-3 text-gray-900">Calculadora de Bhaskara</h3>
+                    <p class="text-xl text-gray-800 pt-4 text-center">Meu projeto de uma calculadora de bhaskara</p>
+                    <div class="p-7">
+                        <a href="https://kauanhsp.github.io/calculadora-de-bhaskara/" class="text-xl font-black text-blue-800 hover:text-blue-500 hover:underline">Link para o projeto</a>
+                    </div>
+                </div>
+            </div>  
+        </section>
+
+        <section id="contato" class="py-12">
+            <h2 class="text-center py-6 text-4xl font-serif mb-2">Contato:</h2>
+            <div class="flex">
+               <div class="text-center max-w-5xl m-auto bg-gray-300 shadow p-6 rounded-md">
+                    <p>📧E-mail: kaun.pereira3@estudante.ifms.edu.br</p>
+                    <p>💼GitHUb: <a href="https://github.com/KauanHSP" class="text-blue-800 hover:text-blue-500 hover:underline">github.com/KauanHSP</a></p>
+                </div> 
             </div>
         </section>
     </main>
+    <footer class="bg-gradient-to-tr from-blue-300 to-gray-100 p-6 text-center text-black">
+        © 2025 Kauan Prado. Todos os direitos reservados.
+    </footer>
 </body>
 </html>
